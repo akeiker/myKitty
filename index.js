@@ -17,9 +17,9 @@ var handlers = {
     },
     'KittyIntent': function () {
 
-        var sound = parseInt(this.event.request.intent.slots.LIST_OF_SOUNDS.value);
+        var sound = this.event.request.intent.slots.Sound.value;
 
-        this.emit(':tell', sound); 
+        this.emit(':tell', sound);
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = this.t("HELP_MESSAGE");

@@ -1,0 +1,22 @@
+{
+  "name": "mykitty",
+  "version": "1.0.0",
+  "description": "myKitty Alexa Skill",
+  "main": "index.js",
+  "scripts": {
+    "test": "mykitty test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akeiker/myKitty.git"
+  },
+  "author": "Alexis Keiker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akeiker/myKitty/issues"
+  },
+  "homepage": "https://github.com/akeiker/myKitty#readme",
+  "dependencies": {
+    "alexa-sdk": "^1.0.7"
+  }
+}

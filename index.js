@@ -16,7 +16,10 @@ var handlers = {
       this.emit(':ask', this.attributes['speechOutput'], this.attributes['repromptSpeech'])
     },
     'KittyIntent': function () {
-        this.emit(':tell', 'Kitty Get Down');
+
+        var sound = parseInt(this.event.request.intent.slots.LIST_OF_SOUNDS.value);
+
+        this.emit(':tell', sound); 
     },
     'AMAZON.HelpIntent': function () {
         this.attributes['speechOutput'] = this.t("HELP_MESSAGE");
